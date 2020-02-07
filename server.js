@@ -44,6 +44,13 @@ app.get('/', (req, res) => {
    });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'projects page',
+        message: 'this is our projects page'
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'about ali ghassabbshi'
